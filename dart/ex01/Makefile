@@ -1,5 +1,11 @@
+.PHONY: test
+
 format:
-	dart format hello.dart
+	dart format lib
+	dart format test
 
 run:
-	dart hello.dart
+	dart lib/hello.dart
+
+test:
+	dart test
